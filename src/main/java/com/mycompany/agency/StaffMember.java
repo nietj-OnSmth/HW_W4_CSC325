@@ -1,7 +1,7 @@
 package com.mycompany.agency;
 
 // TODO 1: Make this class work and public
- class StaffMember
+public abstract class StaffMember
 {
     protected String name;
     protected String address;
@@ -17,15 +17,15 @@ package com.mycompany.agency;
         address = eAddress;
         phone = ePhone;
     }
-
     //-----------------------------------------------------------------
     // TODO 2: Returns a string including the basic employee information.
     //-----------------------------------------------------------------
+    @Override
     public String toString()
-    {
+    {       //return the info that's needed
+        return name + " " + address + " " + phone;
 
     }
-
     //-----------------------------------------------------------------
     //  Derived classes must define the pay method for each type of
     //  employee.
