@@ -1,8 +1,5 @@
 package com.mycompany.agency;
 
-
-
-
 public class Staff
 {
     private StaffMember[] staffList;
