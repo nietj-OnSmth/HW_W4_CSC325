@@ -1,0 +1,29 @@
+Index: src/main/java/com/mycompany/agency/StaffEmployee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.mycompany.agency;\r\n\r\n\r\n    // TODO 1: Make StaffEmployee a child of StaffMember\r\n\r\npublic class StaffEmployee \r\n{\r\n    protected String socialSecurityNumber;\r\n    protected double payRate;\r\n\r\n    //-----------------------------------------------------------------\r\n    //  TODO 2: Sets up this staff employee with the specified\r\n    //  information.\r\n    //-----------------------------------------------------------------\r\n    public StaffEmployee(String eName, String eAddress, String ePhone,\r\n            String socSecNumber, double rate)\r\n    {\r\n        super(eName, eAddress, ePhone);\r\n\r\n        socialSecurityNumber = socSecNumber;\r\n        payRate = rate;\r\n    }\r\n\r\n    //-----------------------------------------------------------------\r\n    // TODO 3: complete the implementation of toString to return information \r\n    //          about a staff employee as a string.\r\n    //-----------------------------------------------------------------\r\n    public String toString()\r\n    {\r\n    \r\n    }\r\n\r\n    //-----------------------------------------------------------------\r\n    // TODO 4:  Returns the pay rate for this staff employee.\r\n    //-----------------------------------------------------------------\r\n    public double pay()\r\n    {\r\n       \r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/agency/StaffEmployee.java b/src/main/java/com/mycompany/agency/StaffEmployee.java
+--- a/src/main/java/com/mycompany/agency/StaffEmployee.java	(revision ae54c5eecebcccbaec2e207b30fa837c908d085e)
++++ b/src/main/java/com/mycompany/agency/StaffEmployee.java	(date 1770859823752)
+@@ -27,7 +27,9 @@
+     //-----------------------------------------------------------------
+     public String toString()
+     {
+-    
++        return super.toString() +
++                "\nSocial Security Number: " + socialSecurityNumber +
++                "\nPay Rate: $" + payRate;
+     }
+ 
+     //-----------------------------------------------------------------
+@@ -35,6 +37,6 @@
+     //-----------------------------------------------------------------
+     public double pay()
+     {
+-       
++        return payRate;
+     }
+ }
